@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #43b431;
+}
+
+.chronometre {
+    width: 550px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    width: 100%;   /* S'étend sur toute la largeur disponible */
+    min-width: 500px; /* Fixe une largeur minimale pour éviter les débordements */
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    overflow: hidden;    /* Cache tout excédent qui dépasserait */
+    text-align: center;  /* Centrer tout le texte */
+}
+
+
+.tim span {
+    font-family: "Ubuntu", cursive;
+    padding: 5px;
+}
+
+.controls{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #45c131;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 9px;
+    width: 31%;
+    border: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
